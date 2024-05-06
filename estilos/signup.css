@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
+
 *{
     margin: 0;
     padding: 0;
@@ -19,10 +21,10 @@ body{
     height: 100vh;
 }
 
-#container{
-    margin: 0 auto;
+#container-signup{
+    margin: 10px auto;
     min-height: 100%;
-    width: 800px;
+    max-width: 400px;
     display: flex;
     align-items: center;
 }
@@ -32,25 +34,33 @@ body{
     width: 50%;
 }
 
-.left{
-    background-image: url("../imagens/main.png");
-    background-size: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    margin-bottom: 50px;
-}
-
-.right{
-    padding-left: 20px;
-}
-
 .login-panel{
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
     text-align: center;
     padding: 20px 0;
 }
+
+.message{
+    font-size: 15px;
+    font-weight: bold;
+    color: #818181;
+    width: 280px;
+    margin: 10px auto;
+}
+
+.face-button{
+    height: 35px;
+    width: 320px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #4CB5F9;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 form{
     display: flex;
@@ -86,6 +96,7 @@ input[type="submit"]{
     border-radius: 8px;
     background-color: #4CB5F9;
     margin-top: 10px;
+    margin-bottom: 15px;
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
@@ -99,25 +110,25 @@ input[type="submit"]{
     margin: 25px auto;
 }
 
-.linha-left, .linha-right {
+.linha-left, .linha-right{
     flex-grow: 1;
     border-top: 1px solid rgba(219, 218, 218, 0.842);
 }
 
 .texto {
     padding: 0 20px;
-    color: rgb(128, 128, 128);
+    color: rgb(128, 128, 128);;
     user-select: none;
 }
 
-.links{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+.text-information{
+    width: 280px;
 }
 
-.facebook{
-    margin-bottom: 20px;
+.text-information p{
+    color: #7c7c7c;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 a{
@@ -125,16 +136,6 @@ a{
     color: #385185;
 }
 
-.facebook a{
-    font-weight: bold;
-    font-size: 13px;
-    user-select: none;
-}
-
-span a{
-    font-size: 12px;
-    user-select: none;
-}
 
 .nova-conta{
     background-color: #ffffff;
@@ -193,4 +194,7 @@ footer{
 option{
     color: black;
 }
+
+
+
 

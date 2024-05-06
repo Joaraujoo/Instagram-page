@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/signup.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <title>Instagram</title>
+    <title>Cadastra-se Instagram</title>
 </head>
 <body>
     <main id="wrapper">
-        <section id="container">
-
-            <div class="column left">
-                <div class="div-main"></div>
-            </div>
-
-            <div class="column right">
+        <section id="container-signup">
+            <div class="column">
                 <div class="login-panel">
 
                     <div class="logo">
                         <img src="imagens/logo.png" alt="logo do instagram">
                     </div>
 
-                    <form action="form.php" method="post">
-                        <input type="text" name="username" id="iusername" placeholder="Telefone, usúario ou e-mail">
-                        <input type="password" name="senha" id="isenha" placeholder="Senha" minlength="8" maxlength="20">
+                    <div class="message">
+                        <p>Cadastre-se para ver fotos e vídeos dos seus amigos</p>
+                    </div>
 
-                        <input type="submit" value="Entrar">
-                    </form>
+                    <button class="face-button">
+                        <img src="imagens/face-branca.png" alt="logo facebook"> Entrar com Facebook
+                    </button>
 
                     <div class="linha-com-texto">
                         <div class="linha-left"></div>
@@ -35,17 +31,31 @@
                         <div class="linha-right"></div>
                     </div>
 
-                    <div class="links">
-                        <div class="facebook">
-                            <a href="#"><img src="imagens/facebook.png" alt="logo do facebook"> &nbsp;Entrar com o Facebook</a>
+                    <form action="form.php" method="post">
+
+                        <input type="text" name="username" id="iusername" placeholder="Número do celular ou email" required>
+
+                        <input type="text" name="apelido" id="iapelido" placeholder="Nome completo" required>
+
+                        <input type="text" name="usuario" id="iusuario" placeholder="Nome de usuário" required>
+
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" minlength="8" maxlength="20" required>
+
+                        <div class="text-information">
+
+                            <p>As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Instagram. <a href="#">Saiba mais </a></p>
+
+                            <p>Ao se cadastrar, você concorda com nossos <a href="#">Termos, Política de Privacidade e Política de Cookies.</a></p>
+
                         </div>
 
-                        <span><a href="#">Esqueceu a senha?</a></span>
-                    </div>
+                        <input type="submit" value="Cadastre-se">
+                    </form>
+
                 </div>
 
                 <div class="nova-conta">
-                    <a href="signup.html">Criar nova conta</a>
+                    Tem uma conta? <a href="index.html">Conecte-se</a>
                 </div>
 
                 <div class="download">
